@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('committees');
   this.route('house-results');
   this.route('senate-results');
+  this.route('committee', {path: '/committee/:committee_id'});
 });
 
 export default Router;
