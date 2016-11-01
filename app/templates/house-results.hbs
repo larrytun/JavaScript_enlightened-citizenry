@@ -1,0 +1,6 @@
+<h1>Congress Committees</h1>
+<button {{action 'getSenateCommittees'}} class="btn btn-primary">Senate</button>
+<h2>House Committees</h2>
+{{#each model as |committee|}}
+  <li> {{committee.name}}</li>
+{{/each}}
