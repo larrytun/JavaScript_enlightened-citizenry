@@ -1,0 +1,11 @@
+<h1>Bill Details</h1>
+<ul>
+  {{#each model as |bill|}}
+    <li>Official Title: {{bill.official_title}}<br></li>
+    <li>{{#link-to "sponsor" bill.sponsor_id}}Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}{{/link-to}}</li>
+    <li>Introduced on: {{bill.introduced_on}}<br></li>
+    <li><a href="{{bill.last_version.urls.html}}">Link to Bill</a></li><br>
+  {{else}}
+  <h3>There are no subcommittees for this committee</h3>
+  {{/each}}
+</ul>

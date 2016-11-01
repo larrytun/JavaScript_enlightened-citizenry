@@ -1,0 +1,10 @@
+{{#each model as |sponsor|}}
+  <h1>{{sponsor.first_name}} {{sponsor.last_name}}</h1>
+  <h4>{{sponsor.party}} {{sponsor.title}} from {{sponsor.state_name}}</h4>
+  <p><strong>Phone Number: </strong>{{sponsor.phone}}</p>
+  <p><strong>Office Address: </strong>{{sponsor.office}}</p>
+  <p><strong>Email: </strong>{{sponsor.oc_email}}</p>
+  <p><a href="{{sponsor.website}}">{{sponsor.website}}</a></p>
+  <p><a href="https://twitter.com/{{sponsor.twitter_id}}">Twitter</a></p>
+
+{{/each}}

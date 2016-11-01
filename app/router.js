@@ -14,6 +14,8 @@ Router.map(function() {
   this.route('house-results');
   this.route('senate-results');
   this.route('committee', {path: '/committee/:committee_id'});
+  this.route('bill-info', {path: '/bill/:bill_id'});
+  this.route('sponsor', {path: '/sponsor/:sponsor_id'});
 });
 
 export default Router;

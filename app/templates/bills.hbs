@@ -1,1 +1,7 @@
-{{outlet}}
+<h1>Bills:</h1>
+<ul>
+  {{#each model as |bill|}}
+    <li>{{#link-to "bill-info" bill.bill_id}}{{bill.official_title}}{{/link-to}}<br></li>
+    <br>
+  {{/each}}
+</ul>
